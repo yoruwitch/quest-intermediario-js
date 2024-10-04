@@ -50,15 +50,24 @@ textarea {
     color: #a8a8a8;
     border-radius: 5px;
     border: 1px solid black;
+    padding: 10px;
 }
 
 input {
-    width: 298px;
+    min-width: fit-content;
     height: 35px;
 }
 
-input:active {
-    border: 1px solid #3ccc87;
+/* input:focus{
+    border: 1px solid #F52E2E;
+    outline: none;
+  
+} */
+
+#required-field {
+  color: #000;
+  margin-bottom: 10px;
+  display: none;
 }
 
 button {
@@ -67,6 +76,19 @@ button {
     height: 41px;
     border-radius: 5px;
     cursor: pointer;
+    border: none;
 }
 
 /*QUERY para mobile por causa do container que estoura abaixo de ??px*/
+
+@media (width <= 680px) {
+    main {
+        flex-direction: column;
+    }
+    .form-container {
+        width: 100%;
+    }
+    .presentation {
+        
+    }
+}
